@@ -1,0 +1,23 @@
+name: ShorthandCommand
+version: '${project.version}'
+main: info.lousyboi.shorthandcommand.ShorthandCommand
+api-version: 1.17
+authors: [ LousyBoi ]
+description: All your favourite commands but short
+commands:
+  gmc:
+    description: Changes gamemode to creative
+    usage: /gmc
+    permission: shorthandCommands.gmc
+  gma:
+    description: Changes gamemode to adventure
+    usage: /gma
+    permission: shorthandCommands.gma
+  gms:
+    description: Changes gamemode to survival
+    usage: /gms
+    permission: shorthandCommands.gms
+  gmsp:
+    description: Changes gamemode to spectator
+    usage: /gmsp
+    permission: shorthandCommands.gmsp
