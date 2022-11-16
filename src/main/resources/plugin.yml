@@ -21,3 +21,27 @@ commands:
     description: Changes gamemode to spectator
     usage: /gmsp
     permission: shorthandCommands.gmsp
+  day:
+    description: Changes time to day
+    usage: /day
+    permission: shorthandCommands.timeChange
+  night:
+    description: Changes time to night
+    usage: /night
+    permission: shorthandCommands.timeChange
+  peaceful:
+    description: Change difficulty to peaceful
+    usage: /peaceful
+    permission: shorthandCommands.difficulty
+  easy:
+    description: Change difficulty to easy
+    usage: /easy
+    permission: shorthandCommands.difficulty
+  normal:
+    description: Change difficulty to normal
+    usage: /normal
+    permission: shorthandCommands.difficulty
+  hard:
+    description: Change difficulty to hard
+    usage: /hard
+    permission: shorthandCommands.difficulty

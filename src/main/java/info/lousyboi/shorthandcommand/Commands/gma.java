@@ -1,4 +1,5 @@
 package info.lousyboi.shorthandcommand.Commands;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
 import org.bukkit.command.Command;
@@ -17,20 +18,18 @@ public class gma implements CommandExecutor, Listener{
 
             if (p.hasPermission("shorthandCommands.gma")){
 
-                p.setGameMode(GameMode.ADVENTURE);
+                if (args.length == 0) {
+                    p.setGameMode(GameMode.ADVENTURE);
+                }else {
+                    String player = args[0];
+                    Player gameModeChange = Bukkit.getPlayer(player);
+                    gameModeChange.setGameMode(GameMode.ADVENTURE);
+                }
 
-            }else if(p.isOp()) {
-
-                p.setGameMode(GameMode.ADVENTURE);
-
-            }else{
-
-                p.sendMessage(ChatColor.RED + "This is only available to op players");
-                p.sendMessage(ChatColor.RED + "You are not an op player on this server");
+            }else {
+                p.sendMessage(ChatColor.RED + "This is only available to players with the correct permission");
                 p.sendMessage(ChatColor.RED + "If this is a mistake please contact a server admin");
-
             }
-
         }
 
         return true;
