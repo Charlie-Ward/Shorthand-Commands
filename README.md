@@ -6,7 +6,7 @@
 [![Spigot Version](https://img.shields.io/spiget/version/106088?style=for-the-badge)](https://www.spigotmc.org/resources/bangui.106088/)
 [![GitHub Commits](https://img.shields.io/github/commit-activity/m/Charlie-Ward/Shorthand-Commands?style=for-the-badge)](https://github.com/Charlie-Ward/Shorthand-Commands)
 
-Provides all commanly used commands but shorthand
-All gamemodes commands e.g: /gmc - creative, /gma - adventure, /gmsp - spectator, /gms - survival
-Day times - /day, /night
-Difficulty Commands - /peaceful, /easy, /normal, /hard
+## Provides all commanly used commands but shorthand
+##### All gamemodes commands e.g: /gmc - creative, /gma - adventure, /gmsp - spectator, /gms - survival
+##### Day times - /day, /night
+##### Difficulty Commands - /peaceful, /easy, /normal, /hard
