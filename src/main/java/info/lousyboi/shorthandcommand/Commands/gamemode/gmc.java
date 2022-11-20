@@ -16,20 +16,21 @@ public class gmc implements CommandExecutor, Listener{
         if (sender instanceof Player){
             Player p = (Player) sender;
 
-            if (p.hasPermission("shorthandCommands.gmc")){
+            if (p.hasPermission("shorthandCommands.gamemodeChange")){
 
                 if (args.length == 0) {
                     p.setGameMode(GameMode.CREATIVE);
+                    p.sendMessage(ChatColor.BLUE + "[SC] " + ChatColor.GREEN + "Your gamemode was set to " + ChatColor.YELLOW + "CREATIVE");
+
                 }else {
                     String player = args[0];
                     Player gameModeChange = Bukkit.getPlayer(player);
                     gameModeChange.setGameMode(GameMode.CREATIVE);
+                    p.sendMessage(ChatColor.BLUE + "[SC] " + ChatColor.GREEN + "You set " + ChatColor.YELLOW + player + ChatColor.GREEN + "'s gamemode to " + ChatColor.YELLOW + "CREATIVE");
                 }
 
             }else {
-
-                p.sendMessage(ChatColor.RED + "This is only available to players with the correct permission");
-                p.sendMessage(ChatColor.RED + "If this is a mistake please contact a server admin");
+                p.sendMessage(ChatColor.BLUE + "[SC] " + ChatColor.RED + "You do not have correct permissions to use this feature");
             }
         }
 
