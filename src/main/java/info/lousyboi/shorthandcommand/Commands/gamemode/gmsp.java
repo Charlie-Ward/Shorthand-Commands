@@ -1,4 +1,4 @@
-package info.lousyboi.shorthandcommand.Commands;
+package info.lousyboi.shorthandcommand.Commands.gamemode;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;

@@ -1,4 +1,4 @@
-package info.lousyboi.shorthandcommand.Commands;
+package info.lousyboi.shorthandcommand.Commands.time;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
@@ -9,7 +9,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
 
-public class night implements CommandExecutor, Listener{
+public class day implements CommandExecutor, Listener{
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
@@ -19,7 +19,7 @@ public class night implements CommandExecutor, Listener{
 
             if (p.hasPermission("shorthandCommands.timeChange")){
 
-                p.getLocation().getWorld().setTime(13000);
+                p.getLocation().getWorld().setTime(0);
 
             }else {
                 p.sendMessage(ChatColor.RED + "This is only available to players with the correct permission");

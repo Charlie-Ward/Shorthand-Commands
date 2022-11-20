@@ -1,7 +1,8 @@
 package info.lousyboi.shorthandcommand;
 
-import info.lousyboi.shorthandcommand.Commands.*;
 import info.lousyboi.shorthandcommand.Commands.difficulty.*;
+import info.lousyboi.shorthandcommand.Commands.gamemode.*;
+import info.lousyboi.shorthandcommand.Commands.time.*;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class ShorthandCommand extends JavaPlugin {
@@ -25,6 +26,7 @@ public final class ShorthandCommand extends JavaPlugin {
         getCommand("easy").setExecutor(new easy());
         getCommand("normal").setExecutor(new normal());
         getCommand("hard").setExecutor(new hard());
+
 
 
     }

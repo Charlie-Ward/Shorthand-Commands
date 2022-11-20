@@ -45,3 +45,7 @@ commands:
     description: Change difficulty to hard
     usage: /hard
     permission: shorthandCommands.difficulty
+  clear:
+    description: Changes weather to clear
+    usage: /clear
+    permission: shorhandCommands.weatherChange

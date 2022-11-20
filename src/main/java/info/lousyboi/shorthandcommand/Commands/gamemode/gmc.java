@@ -1,6 +1,6 @@
-package info.lousyboi.shorthandcommand.Commands;
-import org.bukkit.Bukkit;
+package info.lousyboi.shorthandcommand.Commands.gamemode;
 import org.bukkit.ChatColor;
+import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -8,7 +8,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
 
-public class gma implements CommandExecutor, Listener{
+public class gmc implements CommandExecutor, Listener{
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
@@ -16,17 +16,18 @@ public class gma implements CommandExecutor, Listener{
         if (sender instanceof Player){
             Player p = (Player) sender;
 
-            if (p.hasPermission("shorthandCommands.gma")){
+            if (p.hasPermission("shorthandCommands.gmc")){
 
                 if (args.length == 0) {
-                    p.setGameMode(GameMode.ADVENTURE);
+                    p.setGameMode(GameMode.CREATIVE);
                 }else {
                     String player = args[0];
                     Player gameModeChange = Bukkit.getPlayer(player);
-                    gameModeChange.setGameMode(GameMode.ADVENTURE);
+                    gameModeChange.setGameMode(GameMode.CREATIVE);
                 }
 
             }else {
+
                 p.sendMessage(ChatColor.RED + "This is only available to players with the correct permission");
                 p.sendMessage(ChatColor.RED + "If this is a mistake please contact a server admin");
             }
