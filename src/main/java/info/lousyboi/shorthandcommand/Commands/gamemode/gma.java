@@ -20,12 +20,13 @@ public class gma implements CommandExecutor, Listener{
 
                 if (args.length == 0) {
                     p.setGameMode(GameMode.ADVENTURE);
-                    p.sendMessage(ChatColor.BLUE + "[SC] " + ChatColor.GREEN + "Your gamemode was set to " + ChatColor.YELLOW + "ADVENTURE");
+                    p.sendMessage(ChatColor.BLUE + "[SC] " + ChatColor.GREEN + "Your gamemode was set to " + ChatColor.GOLD + "ADVENTURE");
                 }else {
                     String player = args[0];
                     Player gameModeChange = Bukkit.getPlayer(player);
                     gameModeChange.setGameMode(GameMode.ADVENTURE);
-                    p.sendMessage(ChatColor.BLUE + "[SC] " + ChatColor.GREEN + "You set " + ChatColor.YELLOW + player + ChatColor.GREEN + "'s gamemode to " + ChatColor.YELLOW + "ADVENTURE");
+                    p.sendMessage(ChatColor.BLUE + "[SC] " + ChatColor.GREEN + "You set " + ChatColor.GOLD + player + "'s" + ChatColor.GREEN + " gamemode to " + ChatColor.GOLD + "ADVENTURE");
+                    gameModeChange.sendMessage(ChatColor.BLUE + "[SC] " + ChatColor.GREEN + "Your gamemode was set to " + ChatColor.GOLD + "ADVENTURE" + ChatColor.GREEN + " by " + ChatColor.GOLD + p.getDisplayName());
                 }
 
             }else {

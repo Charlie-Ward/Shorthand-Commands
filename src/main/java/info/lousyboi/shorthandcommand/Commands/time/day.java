@@ -16,7 +16,7 @@ public class day implements CommandExecutor, Listener{
 
             if (p.hasPermission("shorthandCommands.timeChange")){
                 p.getLocation().getWorld().setTime(0);
-                p.sendMessage(ChatColor.BLUE + "[SC] " + ChatColor.GREEN + "Time set to " + ChatColor.YELLOW + "DAY");
+                p.sendMessage(ChatColor.BLUE + "[SC] " + ChatColor.GREEN + "Time set to " + ChatColor.GOLD + "DAY");
             }else {
                 p.sendMessage(ChatColor.BLUE + "[SC] " + ChatColor.RED + "You do not have correct permissions to use this feature");
             }

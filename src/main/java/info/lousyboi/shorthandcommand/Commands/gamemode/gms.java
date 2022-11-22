@@ -20,12 +20,13 @@ public class gms implements CommandExecutor, Listener{
 
                 if (args.length == 0) {
                     p.setGameMode(GameMode.SURVIVAL);
-                    p.sendMessage(ChatColor.BLUE + "[SC] " + ChatColor.GREEN + "Your gamemode was set to " + ChatColor.YELLOW + "SURVIVAL");
+                    p.sendMessage(ChatColor.BLUE + "[SC] " + ChatColor.GREEN + "Your gamemode was set to " + ChatColor.GOLD + "SURVIVAL");
                 }else {
                     String player = args[0];
                     Player gameModeChange = Bukkit.getPlayer(player);
                     gameModeChange.setGameMode(GameMode.SURVIVAL);
-                    p.sendMessage(ChatColor.BLUE + "[SC] " + ChatColor.GREEN + "You set " + ChatColor.YELLOW + player + ChatColor.GREEN + "'s gamemode to " + ChatColor.YELLOW + "SURVIVAL");
+                    p.sendMessage(ChatColor.BLUE + "[SC] " + ChatColor.GREEN + "You set " + ChatColor.GOLD + player + "'s" + ChatColor.GREEN + " gamemode to " + ChatColor.GOLD + "SURVIVAL");
+                    gameModeChange.sendMessage(ChatColor.BLUE + "[SC] " + ChatColor.GREEN + "Your gamemode was set to " + ChatColor.GOLD + "SURVIVAL" + ChatColor.GREEN + " by " + ChatColor.GOLD + p.getDisplayName());
                 }
 
             }else {

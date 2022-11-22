@@ -18,7 +18,7 @@ public class peaceful implements CommandExecutor, Listener {
 
             if (p.hasPermission("shorthandCommands.difficulty")){
                 p.getLocation().getWorld().setDifficulty(Difficulty.PEACEFUL);
-                p.sendMessage(ChatColor.BLUE + "[SC] " + ChatColor.GREEN + "World Difficulty set to " + ChatColor.YELLOW + "PEACEFUL");
+                p.sendMessage(ChatColor.BLUE + "[SC] " + ChatColor.GREEN + "World Difficulty set to " + ChatColor.GOLD + "PEACEFUL");
             }
             else {
                 p.sendMessage(ChatColor.BLUE + "[SC] " + ChatColor.RED + "You do not have correct permissions to use this feature");

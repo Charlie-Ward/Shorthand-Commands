@@ -18,7 +18,7 @@ public class easy implements CommandExecutor, Listener {
 
             if (p.hasPermission("shorthandCommands.difficulty")){
                 p.getLocation().getWorld().setDifficulty(Difficulty.EASY);
-                p.sendMessage(ChatColor.BLUE + "[SC] " + ChatColor.GREEN + "World Difficulty set to " + ChatColor.YELLOW + "EASY");
+                p.sendMessage(ChatColor.BLUE + "[SC] " + ChatColor.GREEN + "World Difficulty set to " + ChatColor.GOLD + "EASY");
             }
             else {
                 p.sendMessage(ChatColor.BLUE + "[SC] " + ChatColor.RED + "You do not have correct permissions to use this feature");
